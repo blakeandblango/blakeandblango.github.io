@@ -52,6 +52,14 @@ body {
   max-width: 40rem;
 }
 
+div.video {
+    margin-top: 50px;
+    width: 100%;
+}
+iframe.video {
+    width: 100%;
+    height: 600px;
+}
 .album {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
