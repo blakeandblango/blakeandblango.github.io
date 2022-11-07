@@ -19,6 +19,10 @@ fake {
   font-family: 'Special Elite', cursive;
 }
 
+#audio-controls {
+  display: none;
+}
+
 tw-story, tw-dialog {
   background-color: #ffecb3;
   color: #4e342e;
@@ -657,8 +661,12 @@ lemondemon: ./assets/lemondemon.mp3
 violinrise: ./assets/violinrise.mp3
 violinend: ./assets/violinending.mp3
 ending: ./assets/ending.mp3</tw-passagedata><tw-passagedata pid="72" name="preloop" tags="" position="450,100" size="100,100">[[loop]]</tw-passagedata><tw-passagedata pid="73" name="loop3" tags="" position="950,100" size="100,100">{(change: ?Passage, (color: white))}\
-[(transition: &quot;pulse&quot;)[(text-size: 3)[(text-style:&quot;emboss&quot;,&quot;expand&quot;,&quot;tall&quot;,&quot;shudder&quot;)[CRASH
-$mayor[&quot;YOU GOTTA DO SOMETHING, YOU AND BLANGO ARE THE ONLY ONES WE CAN TURN TO&quot;]]]]]&lt;line|
+[(transition: &quot;pulse&quot;)[(text-style:&quot;emboss&quot;,&quot;expand&quot;,&quot;tall&quot;,&quot;shudder&quot;)[CRASH]
+
+$mayor[&quot;YOU GOTTA DO SOMETHING, YOU AND BLANGO ARE THE ONLY ONES WE CAN TURN TO&quot;]]]&lt;line|
+
+
+
 $line[=The (color: green)[mayor] bursts out of a 4-dimensional portal! He&#39;s wearing an eye patch.
 &lt;!--$line[=His combat boots hit the ground hard as he sprints towards you, sweat running down his eyepatch.
 --&gt;[[&quot;wait!&quot;-&gt;loop4]]
@@ -844,6 +852,9 @@ $line[=`*you and blangers looking up starry eyed at the fireworks show*`
 
 
 Love, Alex
+
+
+(click:&quot;Play again&quot;)[(restart:)]
 </tw-passagedata><tw-passagedata pid="112" name="&quot;Just wanted to say once again I see you as an equal&quot;" tags="" position="1975,3525" size="100,100">$blango[okay buddy don&#39;t overdo it]
 [[Next-&gt;collectablequestions]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
