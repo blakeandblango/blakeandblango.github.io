@@ -626,9 +626,9 @@ Of //course//.
 [[Next-&gt;gameget]]</tw-passagedata><tw-passagedata pid="68" name="Okay I guess" tags="" position="450,1150" size="100,100">$blango[dang, we didn&#39;t even get the collectable jr pass]
 $blango[at least we learned a valuable lesson about dr kawashima&#39;s brain training]
 [[Go somewhere else-&gt;hub]]</tw-passagedata><tw-passagedata pid="69" name="loop" tags="" position="625,100" size="100,100">$violin[(text-style: &quot;blur&quot;)[A low, distorted hum pierces your ears.]]
-(after: (cond: $loops &gt; 0, 0s, 3s))[$violin[It (text-style: &quot;rumble&quot;)[rises] and (text-style: &quot;shudder&quot;, &quot;tall&quot;)[RISES TO A SCREECHING BLARE]]]
-(after: (cond: $loops &gt; 0, 0s, 5s))[$blango[what&#39;s-]]
-(after: (cond: $loops &gt; 0, 0s, 6s))[\
+(after: (cond: $loops &gt; 0, 1s, 3s))[$violin[It (text-style: &quot;rumble&quot;)[rises] and (text-style: &quot;shudder&quot;, &quot;tall&quot;)[RISES TO A SCREECHING BLARE]]]
+(after: (cond: $loops &gt; 0, 1s, 5s))[$blango[what&#39;s-]]
+(after: (cond: $loops &gt; 0, 1s, 6s))[\
 (if: (visited: &quot;codeget&quot;))[\
 [[Just let it happen-&gt;loopwithcode]]]
 (else:)[\
